@@ -1,0 +1,110 @@
+
+#pricing {
+	padding: 100px 13% 85px;
+	background: url('../../images/wave-background-bottom-second-large.png') no-repeat;
+	background-position: bottom;
+	background-size: 100% 28%;
+	article {
+		width: 55%;
+		margin-bottom: 75px;
+	}
+}
+
+.pricing-plans-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 90%;
+		bottom: 0;
+		background-color: #f6f6f6;
+		box-shadow: 0 0 10px 10px #f6f6f6;
+		opacity: 0.9;
+		z-index: -1;
+	}
+	&:after {
+		content: '';
+		width: 100%;
+		height: 25%;
+		position: absolute;
+		bottom: 0;
+		background: url('../../images/wave-pricing-large.png') transparent no-repeat;
+		background-position: center bottom;
+	}
+}
+
+.pricing-plan {
+	width: 373px;
+	height: 420px;
+	padding-top: 35px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	color: $font-primary-color;
+	text-align: center;
+	background-color: #FFF;
+	&:nth-of-type(2) {
+		margin: 0 3px;
+	}
+	&:hover .pricing-plan-name {
+		background-color: $primary-color;
+		color: #FFF;
+		transition: $animation-time;
+	}
+	p {
+		width: 80%;
+		font: 400 14px/28px $primary-font;
+	}
+}
+
+.price {
+	font: 700 40px/28px $secondary-font;
+	color: #333333;
+}
+
+.pricing-plan-name, 
+.cta {
+	font: 700 14px/28px $secondary-font;
+	color: $font-primary-color;
+	text-transform: uppercase;
+	letter-spacing: 1.96px;
+}
+
+.pricing-plan-name {
+	width: 100%;
+	line-height: 44px;
+	margin: 30px 0 34px 0;
+	background-color: #f6f6f6;
+	border: { 
+		right: 5px solid $primary-color;
+		left: 5px solid $primary-color;
+	}
+	box-sizing: border-box;
+	transition: $animation-time;
+	&:hover {
+		background-color: $primary-color;
+		transition: $animation-time;
+	}
+}
+
+.pricing-plan-recomendation {
+	text-decoration: none;
+	margin-top: 15px;
+}
+
+.cta {
+	margin-top: 35px;
+	text-decoration: none;
+	color:  #333333;
+	&:hover {
+		text-decoration: underline;
+		color: $primary-color;
+		cursor: pointer;
+	}
+}

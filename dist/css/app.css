@@ -1,0 +1,490 @@
+@charset "UTF-8";
+/*@charset 'utf-8';*/
+/*@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700|Poppins:300,400');*/
+/*
+
+- plik ze zmiennymi variables
+- plik z media queries dla tabletów 
+- z media queries dla mobile
+
+
+*/
+/*
+
+- plik ze zmiennymi variables
+- plik z media queries dla tabletów 
+- z media queries dla mobile
+
+
+*/
+/*---------------------------*
+	        GLOBAL
+-----------------------------*/
+h2 {
+  margin: 50px 0;
+  font: 700 30px/28px "Poppins", sans-serif;
+  color: #333333; }
+  h2 span:first-child {
+    font: 700 64px/28px "PT Serif", serif;
+    color: #aeaeae; }
+  h2 span:last-child {
+    color: #66a900; }
+
+p {
+  font: 400 16px/28px "PT Serif", serif;
+  color: #aeaeae; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*---------------------------*
+		BACKGROUND
+-----------------------------*/
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto; }
+
+/*---------------------------*
+		SECTION - INTRO
+-----------------------------*/
+#intro {
+  height: 100vh;
+  padding: 50px 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #FFF;
+  background: url("../../images/intro-background-large.jpg") center center no-repeat;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.main-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font: 400 14px/28px "PT Serif", serif; }
+  .main-nav li {
+    display: inline-block;
+    padding-left: 30px; }
+    .main-nav li a {
+      color: #FFF;
+      text-decoration: none; }
+    .main-nav li a:hover {
+      text-decoration: underline; }
+
+header {
+  max-width: 600px; }
+  header p {
+    color: #FFF; }
+
+h1 {
+  max-width: 500px;
+  margin-bottom: 44px;
+  font: 400 50px/52px "Poppins", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 16px rgba(255, 255, 255, 0.29); }
+
+/*---------------------------*
+		SECTION - WELCOME
+-----------------------------*/
+#welcome {
+  padding: 140px 0 0 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../images/top-wave-large.png") no-repeat #FFF; }
+  #welcome article {
+    max-width: 800px;
+    letter-spacing: 0.64px; }
+    #welcome article p {
+      margin: 25px 0; }
+
+/*---------------------------*
+	  SECTION - ABOUT
+-----------------------------*/
+#about {
+  padding: 140px 13% 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFF; }
+  #about article {
+    max-width: 700px;
+    margin-left: 2em; }
+    #about article li {
+      margin: 30px 0;
+      color: #999999;
+      letter-spacing: 0.64px;
+      font: 400 16px/30px "Poppins", sans-serif;
+      font-weight: 700; }
+      #about article li span {
+        width: 45px;
+        height: 45px;
+        margin-right: 25px;
+        display: inline-block;
+        font: 400 21px "PT Serif", serif;
+        color: #FFF;
+        background-color: #66a900;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 45px; }
+
+/*---------------------------*
+		  PROMOTION
+-----------------------------*/
+aside {
+  height: 422px;
+  padding: 0 13% 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("../../images/wave-background-bottom-large.png") no-repeat;
+  background-size: min-content;
+  background-position: center bottom;
+  background-color: #FFF; }
+  aside h3 {
+    margin-bottom: 17px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #FFF; }
+  aside h3 + p {
+    color: #FFF;
+    font: 300 14px/30px "Poppins", sans-serif; }
+  aside button {
+    width: 273px;
+    height: 60px;
+    font: 700 16px/30px "PT Serif", serif;
+    background-color: #FFF;
+    border: none;
+    color: #66a900; }
+
+aside:last-of-type {
+  background: url("../../images/wave-background-bottom-second-large.png") no-repeat;
+  background-position: bottom; }
+
+/*---------------------------*
+	SECTION - PROD-FEATURES
+-----------------------------*/
+#prod-features {
+  padding: 5% 0 5% 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFF; }
+  #prod-features article {
+    max-width: 640px; }
+    #prod-features article p {
+      letter-spacing: 0.64px; }
+
+.features {
+  padding-left: 20px;
+  margin-top: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .features li {
+    width: 45%;
+    margin-bottom: 23.5px;
+    list-style-image: url(../../images/thick.png);
+    list-style-position: outside; }
+    .features li h3 {
+      font: 700 18px/28px "Poppins", sans-serif;
+      color: #333333; }
+    .features li span {
+      font: 400 14px/24px "PT Serif", serif;
+      color: #aeaeae; }
+
+/*---------------------------*
+	SECTION - TESTIMONIALS
+-----------------------------*/
+#testimonials {
+  padding: 5% 13% 5% 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FFF; }
+
+.photo-slider-container {
+  width: 650px;
+  height: 330px;
+  margin-right: 10px;
+  position: relative; }
+  .photo-slider-container span {
+    width: 37px;
+    height: 37px;
+    background-color: #66a900;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    line-height: 37px; }
+  .photo-slider-container span:first-of-type {
+    top: calc(50% - 18.5px);
+    left: 25%; }
+  .photo-slider-container span:nth-of-type(2) {
+    top: calc(50% - 18.5px);
+    right: 25%; }
+
+.photo-slide {
+  width: 357px;
+  height: 330;
+  position: absolute; }
+  .photo-slide:first-of-type {
+    text-align: left;
+    opacity: 0.1; }
+  .photo-slide:nth-of-type(2) {
+    left: calc(50% - 178.5px);
+    z-index: 1;
+    text-align: center;
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15); }
+  .photo-slide:nth-of-type(3) {
+    right: 0;
+    opacity: 0.1; }
+
+.text-slider-container {
+  height: 273px;
+  max-width: 556px; }
+  .text-slider-container blockquote {
+    max-width: 521px;
+    padding-left: 35px;
+    position: relative;
+    font: 400 14px/28px "PT Serif", serif;
+    font-style: italic;
+    color: #aeaeae; }
+    .text-slider-container blockquote:before {
+      content: ',,';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      font: 700 64px/28px "PT Serif", serif;
+      letter-spacing: -8px;
+      opacity: 0.2;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+
+.text-slide span {
+  display: block;
+  padding-left: 35px;
+  margin-top: 12px; }
+
+.text-slide span:first-of-type {
+  font: 400 16px/28px "Poppins", sans-serif;
+  color: #333333; }
+
+.text-slide span:nth-of-type(2) {
+  color: #aeaeae; }
+
+/*---------------------------*
+	SECTION - PRICING
+-----------------------------*/
+#pricing {
+  padding: 5% 13%;
+  margin-bottom: -330px; }
+  #pricing article {
+    width: 55%;
+    margin-bottom: 75px; }
+
+.pricing-plans-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .pricing-plans-container:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    bottom: 0;
+    background-color: #f6f6f6;
+    -webkit-box-shadow: 0 0 10px 10px #f6f6f6;
+            box-shadow: 0 0 10px 10px #f6f6f6;
+    opacity: 0.9;
+    z-index: -1; }
+  .pricing-plans-container:after {
+    content: '';
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    left: -10%;
+    background: url("../../images/wave-pricing-large.png") transparent no-repeat;
+    background-position: bottom; }
+
+.pricing-plan {
+  width: 373px;
+  height: 420px;
+  padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #aeaeae;
+  text-align: center;
+  background-color: #FFF; }
+  .pricing-plan:hover .pricing-plan-name {
+    background-color: #66a900;
+    color: #FFF; }
+  .pricing-plan p {
+    width: 80%;
+    font: 400 14px/28px "PT Serif", serif; }
+
+.price {
+  font: 700 40px/28px "Poppins", sans-serif;
+  color: #333333; }
+
+.pricing-plan-name,
+.cta {
+  font: 700 14px/28px "Poppins", sans-serif;
+  color: #aeaeae;
+  text-transform: uppercase;
+  letter-spacing: 1.96px; }
+
+.pricing-plan-name {
+  width: 100%;
+  line-height: 44px;
+  margin: 30px 0 34px 0;
+  background-color: #f6f6f6;
+  border-right: 5px solid #66a900;
+  border-left: 5px solid #66a900;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .pricing-plan-name:hover {
+    background-color: #66a900; }
+
+.pricing-plan-recomendation {
+  text-decoration: none;
+  margin-top: 15px; }
+
+.cta {
+  margin-top: 35px;
+  text-decoration: none;
+  color: #333333; }
+  .cta:hover {
+    text-decoration: underline;
+    color: #66a900;
+    cursor: pointer; }
+
+/*---------------------------*
+	SECTION - FOOTER
+-----------------------------*/
+footer {
+  padding: 115px 13% 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #aeaeae; }
+  footer li {
+    display: inline-block; }
+    footer li a {
+      padding-left: 20px;
+      color: #aeaeae;
+      text-decoration: none; }
+      footer li a:hover {
+        text-decoration: underline; }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .logo img {
+    margin-right: 20px; }
+
+@media screen and (max-width: 800px) {
+  #welcome,
+  #about,
+  #testimonial,
+  #pricing {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    padding: 50px 5%; }
+  #about div {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }

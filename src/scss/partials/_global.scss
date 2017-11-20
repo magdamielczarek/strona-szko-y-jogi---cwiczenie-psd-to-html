@@ -1,0 +1,27 @@
+
+h2 {
+	margin-bottom: 50px;
+	font: 700 30px/28px $secondary-font;
+	color: #333333;
+	span:first-child {
+		font: 700 64px/28px $primary-font;
+		color: $font-primary-color;
+	}
+	span:last-child {
+		color: $primary-color;
+	}
+}
+
+p {
+	font: 400 16px/28px $primary-font;
+	color: $font-primary-color;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+section {
+	overflow: hidden;
+}

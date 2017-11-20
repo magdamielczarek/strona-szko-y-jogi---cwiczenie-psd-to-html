@@ -1,0 +1,15 @@
+
+#welcome {
+	padding: 100px 0 0 13%;
+	display: flex;
+	align-items: center;
+	background: url('../../images/top-wave-large.png') no-repeat #FFF;
+	background-size: contain;
+	article {
+		max-width: 800px;
+		letter-spacing: 0.64px;
+		p {
+			margin: 25px 0;
+		}
+	}
+}

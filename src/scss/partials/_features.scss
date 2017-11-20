@@ -1,0 +1,36 @@
+
+#prod-features {
+	padding: 100px 0 5% 13%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	background: #FFF;
+	article {
+		max-width: 640px;
+		p {
+			letter-spacing: 0.64px;
+		} 
+	}
+}
+
+.features {
+	padding-left: 20px;
+	margin-top: 69px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	li {
+		width: 45%;
+		margin-bottom: 23.5px;
+		list-style-image: url(../../images/thick.png);
+		list-style-position: outside;
+		h3 {
+			font: 700 18px/28px $secondary-font;
+			color: #333333;
+		}
+		span {
+			font: 400 14px/24px $primary-font;
+			color: $font-primary-color;
+		}
+	}
+}

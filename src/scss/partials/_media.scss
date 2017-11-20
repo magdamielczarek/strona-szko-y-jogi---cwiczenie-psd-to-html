@@ -1,0 +1,269 @@
+@media screen and (max-width:1250px) {
+//solving problem with testimonial alignment
+
+	
+
+	.pricing-plans-container:after {
+		height: 20%;
+	}
+
+}
+
+
+@media screen and (max-width:1055px) {
+//smaller padding for content
+
+	#welcome,
+	#prod-features {
+		padding-left: 70px;
+	}
+
+	#about,
+	#testimonials {
+		padding-right: 70px;
+	}
+
+	#intro,
+	#pricing,
+	footer {
+		padding: {
+			right: 70px;
+			left: 70px;
+		}	
+	}
+
+	#pricing {
+		background-size: 100% 38%;
+		article {
+			width: 100%;
+		}
+	}
+
+	.photo-slider-container {
+		margin: 0;
+	}
+	
+	aside {
+		h3 + p,
+		button {
+			line-height: 20px;
+		}
+	}
+}
+
+
+@media screen and (max-width:936px) {
+// solving problem with width of footer
+
+
+	footer {
+		text-align: center;
+		padding-top: 35px;
+		flex-flow: column nowrap;
+		align-items: center;
+		.logo {
+			width: 100%;
+			flex-flow: column nowrap;
+			align-items: center;
+			justify-content: center;
+			img {
+				margin: 0;
+			}
+			span {
+				width: 100%;
+				margin: 30px 0;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width:890px) {
+// padding same for both sides, content in one column layout
+
+	#intro,
+	#welcome,
+	#about,
+	#prod-features,
+	#testimonials,
+	#pricing,
+	#promotion {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+	#welcome,
+	#about,
+	#prod-features,
+	#testimonials {
+		flex-wrap: wrap;
+		//justify-content: flex-start;
+	}
+
+	#welcome { //to nie dziala
+		div {
+			margin-right: -70px;
+		}
+	}
+
+	#about {
+		>div {
+			order: 1;
+		}
+		article {
+			margin: 0;
+			max-width: 100%;
+		}
+	}
+
+	#testimonials {
+		>div {
+			order: 1;
+		}
+		article {
+			margin-bottom: 100px;
+		}
+	}
+
+
+}
+
+@media screen and (max-width: 775px) {
+	
+	.pricing-plans-container:after {
+		//background-size: contain;
+		height: 15%;
+	}
+
+}
+
+@media screen and (max-width: 690px) {
+
+	aside {
+		padding: 30px 50px;
+		flex-wrap: wrap;
+		div:first-of-type {
+			margin: 0;
+		}
+		div:nth-of-type(2) {
+			display: none;
+		}
+		button {
+			margin: 20px 0;
+			width: 100%;
+		}
+	}
+
+	#pricing {
+		background-size: contain;
+		padding-bottom: 35px;
+	}
+
+
+	.pricing-plans-container:after {
+		background-size: contain;
+		height: 5%;
+	}
+
+
+	.pricing-plans-container:before {
+		height: 100%;
+		opacity: 1;
+		}
+
+		.pricing-plan {
+			width: 100%;
+			height: 100%;
+		}
+
+		.pricing-plan:nth-of-type(2) {
+			margin: 10px 0 10px;
+		}
+
+	//one column layout for section with pricing
+
+	.pricing-plans-container {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 610px) {
+
+	.photo-slider-container {
+		margin-top: 0px;
+		margin-left: -70px;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+
+	#prod-features {
+		li {
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+	#pricing article {
+			width: 100%;
+	}
+
+
+	footer {
+		padding: 30px 0;
+		ul {
+			flex-flow: column nowrap;
+			li {
+				width: 100%;
+				margin-top: 20px;
+				a {
+					padding: 0;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.photo-slider-container {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 380px) {
+
+	h1 {
+		font-size: 40px;
+	}
+
+	#intro,
+	#welcome,
+	#about,
+	#prod-features,
+	#testimonials,
+	#pricing,
+	aside,
+	footer {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#pricing {
+		padding-bottom: 0;
+	}
+
+	aside:nth-of-type(2) {
+		padding: 30px 20px; 
+	}
+
+}
+
+/*
+
+- przenieśc google fonty do scssa
+
+*/

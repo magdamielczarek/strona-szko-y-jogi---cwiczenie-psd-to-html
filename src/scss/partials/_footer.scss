@@ -1,0 +1,28 @@
+
+footer {
+	padding: 115px 13% 35px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	color: $font-primary-color;
+	li {
+		display: inline-block;
+		a {
+			padding-left: 20px;
+			color: $font-primary-color;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}	
+
+.logo {
+	display: flex;
+	align-items: center;
+	img {
+		margin-right: 20px;
+	}
+}
